@@ -101,7 +101,6 @@
 .social-media-icons {
   display: flex;
   justify-content: space-between;
-  list-style: none;
 }
 
 .social-media-icons a {

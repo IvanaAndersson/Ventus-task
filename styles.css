@@ -33,6 +33,10 @@ body {
   background: #efefef;
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
 }
@@ -84,7 +88,6 @@ a {
 .development-list {
   display: flex;
   align-items: center;
-  list-style: none;
 }
 
 .development-link {
