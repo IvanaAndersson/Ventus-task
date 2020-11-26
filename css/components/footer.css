@@ -1,0 +1,185 @@
+.main-footer {
+  position: relative;
+  color: #ccc;
+  font-size: 0.9em;
+}
+
+.footer-section {
+  padding: 5em 0 2em 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.copyright-social {
+  background: #333333;
+  padding: 2em 0;
+}
+
+.copyright {
+  text-transform: uppercase;
+}
+
+.tweet {
+  margin-bottom: 2em;
+}
+.tweet-text strong {
+  color: #ffffff;
+}
+.tweet-notification {
+  font-style: italic;
+}
+
+.to-top {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+.flick-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flick-image {
+  width: 4.5vw;
+  height: 4.5vw;
+  margin: 0.5vw 0;
+  background: #000;
+}
+
+.button-to-top {
+  display: block;
+  width: 3.5em;
+  height: 3.5em;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.flick-image:before,
+.button-to-top:before {
+  display: block;
+  content: "";
+  padding-top: 50%;
+}
+
+.flick-image img,
+.button-to-top img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.latest-posts {
+  display: flex;
+  flex-direction: column;
+}
+.blog-post {
+  position: relative;
+  padding: 1em 0;
+}
+
+.blog-post:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 1.5px;
+  background: #222222;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.blog-post:last-child:after {
+  display: none;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  color: #242424;
+  border-radius: 3px;
+  outline: none;
+  position: relative;
+}
+
+.media-icon {
+  display: none;
+}
+
+.social-media-icons a::before {
+  display: inline-block;
+  content: "";
+  font-size: 2em;
+}
+
+.social-media-icons a.fa-facebook::before {
+  content: "\f09a";
+}
+
+.social-media-icons a.fa-instagram::before {
+  content: "\f16d";
+}
+.social-media-icons a.fa-twitter::before {
+  content: "\f099";
+}
+.social-media-icons a.fa-github::before {
+  content: "\f09b";
+}
+.social-media-icons a.fa-codepen::before {
+  content: "\f1cb";
+}
+
+.social-media-icons a:hover,
+.social-media-icons a:focus {
+  color: #bbbbbb;
+}
+
+.tooltip {
+  background: #666;
+  color: white;
+  position: absolute;
+  top: -3.1em;
+  left: 50%;
+  padding: 0.5em;
+  font-family: "Poppins";
+}
+
+.tooltip:after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: transparent;
+  border-top: 15px solid #666;
+  border-right: 15px solid transparent;
+}
+
+@media screen and (max-width: 750px) {
+  .flick-image {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .copyright {
+    margin-bottom: 1.5em;
+  }
+}
+@media screen and (max-width: 450px) {
+  .flick-image {
+    width: 20vw;
+    height: 20vw;
+  }
+}

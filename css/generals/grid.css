@@ -1,0 +1,145 @@
+.navigation-content,
+.hero-section,
+.cta,
+.cards,
+.recent-work-cards,
+.services,
+.test-dev-wrapper,
+.footer-content,
+.copyright-social-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 1.5em;
+  align-items: center;
+}
+
+.logo-container {
+  grid-column: span 5;
+}
+.main-nav {
+  grid-column: span 7;
+  justify-self: end;
+}
+.cta,
+.section-heading,
+.cards {
+  grid-column: span 12;
+}
+
+.cta p {
+  grid-column: span 7;
+}
+.cta .button {
+  justify-self: end;
+  grid-column: 8 / span 5;
+}
+
+.card,
+.footer-section {
+  grid-column: span 3;
+}
+
+.recent-work-cards .card {
+  grid-column: span 4;
+}
+
+.testimonials {
+  grid-column: span 8;
+}
+.development {
+  grid-column: span 4;
+}
+
+.copyright {
+  grid-column: span 8;
+}
+
+.social-media-icons {
+  grid-column: 10 / span 3;
+}
+
+@media screen and (max-width: 1600px) {
+  .social-media-icons {
+    grid-column: 9 / span 3;
+  }
+}
+@media screen and (max-width: 1450px) {
+  .navigation-content,
+  .hero-section,
+  .cta,
+  .cards,
+  .recent-work-cards,
+  .services,
+  .test-dev-wrapper,
+  .footer-content,
+  .copyright-social-wrapper {
+    padding: 0 2em;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .cards,
+  .test-dev-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 1em;
+  }
+
+  .recent-work-cards {
+    row-gap: 2.5em;
+  }
+
+  .card {
+    grid-column: span 4;
+  }
+
+  .development,
+  .cta.test-dev-cta {
+    grid-column: span 8;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .navigation-content,
+  .cta {
+    display: flex;
+  }
+
+  .cards,
+  .recent-work-cards,
+  .footer-content,
+  .copyright-social-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .footer-section {
+    grid-column: span 4;
+  }
+  .copyright {
+    grid-column: span 8;
+  }
+  .social-media-icons {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cards,
+  .recent-work-cards,
+  .test-dev-wrapper,
+  .footer-content,
+  .copyright-social-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonials,
+  .development,
+  .cta.test-dev-cta,
+  .copyright {
+    grid-column: span 4;
+  }
+
+  .social-media-icons {
+    grid-column: span 3;
+  }
+}

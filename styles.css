@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+@import "./css/generals/variables.css";
+@import "./css/generals/typography.css";
+@import "./css/generals/grid.css";
+
+@import "./css/components/buttons.css";
+@import "./css/components/cards.css";
+@import "./css/components/navbar.css";
+@import "./css/components/cta.css";
+@import "./css/components/footer.css";
+
+/*GENERAL RESET*/
+html {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #efefef;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-none {
+  display: none;
+}
+
+.site-header,
+.main-nav,
+.main-footer {
+  background: var(--head-foot-color);
+}
+
+.hero-container,
+.hero-section {
+  min-height: 80vh;
+  background: #404040;
+}
+
+.section-heading {
+  font-size: 1em;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.recent-work {
+  padding: 5em 0;
+  margin-bottom: 2.5em;
+}
+
+.testimonials-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.5em 0;
+}
+
+.development {
+  height: 100%;
+}
+
+.development-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em 0;
+}
+
+.development-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.development-link {
+  display: block;
+  padding: 0.8em 1.75em;
+  text-transform: uppercase;
+  color: #666;
+  background-image: linear-gradient(to bottom, #fff, #ddd);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.development-link:hover,
+.development-link:focus {
+  background: #fff;
+  outline: none;
+}
+.development-link.active {
+  background: #fff;
+  font-weight: bold;
+}
+
+#development-content {
+  flex-grow: 1;
+  background: #fff;
+  padding: 2em;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 3px -2px rgba(0, 0, 0, 0.4);
+}
+
+.design-content,
+.production-content {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 750px) {
+  .recent-work {
+    padding: 1em 0;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .testimonials-wrapper {
+    padding: 1em 0;
+  }
+
+  .development-wrapper {
+    padding: 1em 0;
+  }
+}

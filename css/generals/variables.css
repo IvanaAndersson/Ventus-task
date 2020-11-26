@@ -1,0 +1,15 @@
+:root {
+  --details-color: #4691d5;
+  --head-foot-color: #363636;
+  --body-bg-color: #efefef;
+
+  /* variables for the navbar */
+  --link-hover-color: #303030;
+  --active-tab-color: #3f3f3f;
+  --inactive-link-color: #cccccc;
+  --active-link-color: #ffffff;
+
+  /* variables for the cards */
+  --cards-text-color: #666666;
+  --cards-bg-color: #ffffff;
+}
