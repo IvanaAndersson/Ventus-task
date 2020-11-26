@@ -114,7 +114,10 @@
     opacity: 1;
   }
 
-  .nav-item.active:before,
+  .nav-item.active:before {
+    width: 2px;
+    height: 100%;
+  }
   .nav-item.active:after {
     display: none;
   }
