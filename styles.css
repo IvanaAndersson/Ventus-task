@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 
+@import url("https://use.fontawesome.com/releases/v5.0.7/css/all.css");
+
 @import "./css/generals/variables.css";
 @import "./css/generals/typography.css";
 @import "./css/generals/grid.css";
@@ -45,6 +47,16 @@ a {
   display: none;
 }
 
+.nav-link,
+.section-heading,
+.cards .card-heading,
+.services-list li,
+.footer-content .card-heading,
+.development-link,
+blockquote.card p:first-child {
+  text-transform: uppercase;
+}
+
 .site-header,
 .main-nav,
 .main-footer {
@@ -58,43 +70,105 @@ a {
 }
 
 .section-heading {
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: normal;
-  text-transform: uppercase;
   text-align: center;
 }
 
-.recent-work {
-  padding: 5em 0;
-  margin-bottom: 2.5em;
+.recent-work,
+.recent-work .section-heading,
+.services {
+  margin-bottom: 5em;
+}
+
+.nav-list,
+.services-wrapper,
+.services-list,
+.services-list li,
+.testimonials-wrapper,
+.development-wrapper,
+.development-list,
+.design-content,
+.production-content {
+  display: flex;
+}
+
+.services-list,
+.design-content,
+.production-content,
+.development-wrapper {
+  flex-direction: column;
+}
+
+.services-wrapper,
+.quote,
+.testimonials-wrapper,
+.development-wrapper {
+  padding: 2.5em 0;
+}
+
+.quote {
+  align-self: flex-start;
+}
+.services-list {
+  flex-basis: 33%;
+  justify-content: space-between;
+}
+
+.services-list li {
+  flex-grow: 1;
+  align-items: stretch;
+}
+.services-list li a {
+  flex-grow: 1;
+  align-self: center;
+  font-weight: bold;
+  color: #444;
+  padding: 1em 0 1em 1.75em;
+}
+
+.services-list li a.active {
+  background: #444444;
+  color: #fff;
+  position: relative;
+}
+
+.services-list li a.active::after {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0.5em;
+  right: -1.2em;
+  background: rgb(255, 255, 255, 0);
+  border-top: 2.5em solid #444444;
+  border-left: 2.5em solid transparent;
+  transform: rotate(45deg);
+}
+
+.service-description-container {
+  flex-basis: 66%;
+  border-left: 1px solid rgba(68, 68, 68, 0.5);
+  padding: 1em 0 1em 2.5em;
 }
 
 .testimonials-wrapper {
-  display: flex;
   flex-wrap: wrap;
-  padding: 2.5em 0;
 }
 
 .development {
   height: 100%;
 }
 
-.development-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding: 2.5em 0;
-}
-
 .development-list {
-  display: flex;
   align-items: center;
 }
 
 .development-link {
   display: block;
   padding: 0.8em 1.75em;
-  text-transform: uppercase;
-  color: #666;
+  color: #444;
   background-image: linear-gradient(to bottom, #fff, #ddd);
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
 }
@@ -117,12 +191,6 @@ a {
   position: relative;
   z-index: 2;
   box-shadow: 0 0 3px -2px rgba(0, 0, 0, 0.4);
-}
-
-.design-content,
-.production-content {
-  display: flex;
-  flex-direction: column;
 }
 
 @media screen and (max-width: 750px) {

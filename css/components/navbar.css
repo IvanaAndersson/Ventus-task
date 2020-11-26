@@ -7,10 +7,9 @@
 }
 
 .nav-list {
-  display: flex;
+  justify-content: flex-end;
   align-items: center;
   font-family: "Anton", sans-serif;
-  justify-content: flex-end;
 }
 
 .nav-item {
@@ -53,7 +52,6 @@
 .nav-link {
   display: block;
   padding: 2em 1.5em;
-  text-transform: uppercase;
   color: var(--inactive-link-color);
 }
 

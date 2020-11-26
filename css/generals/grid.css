@@ -41,19 +41,19 @@
   grid-column: span 3;
 }
 
-.recent-work-cards .card {
-  grid-column: span 4;
-}
-
-.testimonials {
-  grid-column: span 8;
-}
+.recent-work-cards .card,
 .development {
   grid-column: span 4;
 }
 
+.services-wrapper,
+.testimonials,
 .copyright {
   grid-column: span 8;
+}
+
+.quote {
+  grid-column: 9 / span 4;
 }
 
 .social-media-icons {

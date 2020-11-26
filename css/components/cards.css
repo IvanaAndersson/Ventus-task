@@ -73,11 +73,14 @@
 
 .cards .card-heading,
 .footer-content .card-heading {
-  text-transform: uppercase;
   font-size: 1.2em;
   font-weight: normal;
 }
 
+.service-description .card-heading {
+  font-size: 1.2em;
+  margin-bottom: 1.5em;
+}
 .footer-content .card-heading {
   color: white;
   margin-bottom: 1em;
@@ -168,6 +171,19 @@ img {
 
 .card-content {
   padding: 0 1.5em;
+}
+
+blockquote.card {
+  padding: 1em;
+}
+
+blockquote.card p:first-child {
+  font-size: 2em;
+}
+
+blockquote.card p:last-child {
+  font-size: 0.8em;
+  margin-top: 1.5em;
 }
 
 .testimonials-wrapper .card {

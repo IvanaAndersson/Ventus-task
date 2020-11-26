@@ -3,6 +3,10 @@
   --head-foot-color: #363636;
   --body-bg-color: #efefef;
 
+  /* variables for the buttons */
+  --button-gradient-top-color: #5aa2e6;
+  --button-gradient-bottom-color: #4687c9;
+
   /* variables for the navbar */
   --link-hover-color: #303030;
   --active-tab-color: #3f3f3f;
