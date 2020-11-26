@@ -182,7 +182,6 @@ img {
 .testimonials-wrapper .card-text {
   text-align: justify;
   font-size: 0.9em;
-  font-style: italic;
 }
 
 @media screen and (max-width: 750px) {

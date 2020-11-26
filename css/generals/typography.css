@@ -58,3 +58,7 @@ h5 {
 h6 {
   font-size: 1.05em;
 }
+
+blockquote p:not(:last-child) {
+  font-style: italic;
+}
