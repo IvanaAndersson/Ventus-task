@@ -126,6 +126,10 @@ blockquote.card p:first-child {
   padding: 1em 0 1em 1.75em;
 }
 
+.services-list li a:hover {
+  background-image: linear-gradient(to bottom, #fff, #ddd);
+}
+
 .services-list li a.active {
   background: #444444;
   color: #fff;
@@ -148,8 +152,13 @@ blockquote.card p:first-child {
 
 .service-description-container {
   flex-basis: 66%;
-  border-left: 1px solid rgba(68, 68, 68, 0.5);
+  border-left: 1px solid rgba(184, 184, 184, 0.9);
   padding: 1em 0 1em 2.5em;
+  box-shadow: -10px 1px 10px -10px rgba(184, 184, 184, 0.75);
+}
+
+.service-description-container .button-blue {
+  margin-top: 3em;
 }
 
 .testimonials-wrapper {
@@ -200,6 +209,10 @@ blockquote.card p:first-child {
 }
 
 @media screen and (max-width: 450px) {
+  .hero-container,
+  .hero-section {
+    min-height: 70vh;
+  }
   .testimonials-wrapper {
     padding: 1em 0;
   }

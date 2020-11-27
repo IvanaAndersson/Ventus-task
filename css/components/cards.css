@@ -174,11 +174,11 @@ img {
 }
 
 blockquote.card {
-  padding: 1em;
+  padding: 2em 1em 1.5em 2.7em;
 }
 
 blockquote.card p:first-child {
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 blockquote.card p:last-child {
@@ -198,6 +198,18 @@ blockquote.card p:last-child {
 .testimonials-wrapper .card-text {
   text-align: justify;
   font-size: 0.9em;
+}
+
+@media screen and (max-width: 1300px) {
+  blockquote.card p:first-child {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  blockquote.card p:first-child {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 750px) {

@@ -107,14 +107,20 @@
 
   .cards,
   .recent-work-cards,
+  .services,
   .footer-content,
   .copyright-social-wrapper {
     grid-template-columns: repeat(8, 1fr);
   }
 
+  .quote {
+    display: none;
+  }
+
   .footer-section {
     grid-column: span 4;
   }
+  .section-heading,
   .copyright {
     grid-column: span 8;
   }
