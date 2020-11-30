@@ -1,5 +1,6 @@
 .cards {
-  padding: 5em 0;
+  padding-top: 5em;
+  padding-bottom: 5em;
 }
 
 .card {
@@ -40,7 +41,7 @@
 }
 
 .cards .card {
-  padding: 1.5em;
+  padding: 1em 2.5em;
   text-align: center;
   background: rgba(255, 255, 255, 0);
 }

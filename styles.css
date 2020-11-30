@@ -8,6 +8,7 @@
 @import "./css/generals/grid.css";
 
 @import "./css/components/buttons.css";
+@import "./css/components/carousel.css";
 @import "./css/components/cards.css";
 @import "./css/components/navbar.css";
 @import "./css/components/cta.css";
@@ -48,6 +49,7 @@ a {
 }
 
 .nav-link,
+.carousel-heading,
 .section-heading,
 .cards .card-heading,
 .services-list li,
@@ -69,16 +71,36 @@ blockquote.card p:first-child {
   background: #404040;
 }
 
+.hero-container ~ .section-detail {
+  height: 1em;
+}
+
+.section-detail {
+  background-repeat: repeat-x;
+  background: url("./pictures/drawing.svg") center center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .section-heading {
   font-size: 1.1em;
+  background: var(--body-bg-color);
+  color: var(--cards-text-color);
   font-weight: normal;
-  text-align: center;
+  margin-bottom: 0;
+  padding: 0 1.5em;
 }
 
 .recent-work,
-.recent-work .section-heading,
 .services {
-  margin-bottom: 5em;
+  padding-top: 4.5em;
+  padding-bottom: 4.5em;
+}
+
+.recent-work .section-detail,
+.services .section-details {
+  margin-bottom: 3em;
 }
 
 .services-wrapper,
