@@ -103,6 +103,17 @@
 
 @media screen and (max-width: 750px) {
   .navigation-content,
+  .hero-section,
+  .cta,
+  .cards,
+  .recent-work-cards,
+  .services,
+  .test-dev-wrapper,
+  .footer-content,
+  .copyright-social-wrapper {
+    padding: 0 2.5em;
+  }
+  .navigation-content,
   .cta {
     display: flex;
   }
@@ -126,6 +137,7 @@
   .cta,
   .carousel,
   .section-heading,
+  .section-detail,
   .copyright {
     grid-column: span 8;
   }

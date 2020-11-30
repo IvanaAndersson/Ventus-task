@@ -1,3 +1,26 @@
+//SERVICES SECTION
+
+const servicesButtons = document
+  .querySelector(".services-list")
+  .querySelectorAll("li a");
+const servicesContents = document
+  .querySelector(".service-description-container")
+  .querySelectorAll("article");
+
+servicesButtons.forEach((button, i) => {
+  button.addEventListener("click", (e) => {
+    servicesContents.forEach((section, j) => {
+      section.classList.add("d-none");
+      servicesButtons[j].classList.remove("active");
+      if (j === i) {
+        e.target.classList.add("active");
+        servicesContents[j].classList.remove("d-none");
+      }
+    });
+  });
+});
+
+//SECTION DEVELOPMENT
 const designTabLink = document.getElementById("tab-design");
 const productionTabLink = document.getElementById("tab-production");
 
@@ -19,6 +42,7 @@ designTabLink.addEventListener("click", (_e) => {
   designContent.style.display = "flex";
 });
 
+//FOOTER SECTION
 const facebookIcon = document.getElementById("fa-facebook");
 const socialLinks = document
   .querySelector(".social-media-icons")
